@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind CSS Test</title>
+  <link href="./dist/output.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-800">Utopiashop</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="text-gray-700 hover:text-blue-500">Главная</a></li>
+          <li><a href="#" class="text-gray-700 hover:text-blue-500">Товары</a></li>
+          <li><a href="#" class="text-gray-700 hover:text-blue-500">О нас</a></li>
+          <li><a href="#" class="text-gray-700 hover:text-blue-500">Контакты</a></li>
+        </ul>
+      </nav>
+      <div>
+        <button class="text-gray-700 hover:text-blue-500">Корзина (0)</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Logan Section -->
+  <section class="bg-blue-500 text-white py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Добро пожаловать </h2>
+      <p class="text-lg mb-8">Utopiashop — мир мечты в каждой покупке!</p>
+      <a href="#" class="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">Вперед за покупками</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-gray-800 mb-8">Самые популярные товары</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/300" alt="Product" class="w-full">
+          <div class="p-4">
+            <h4 class="text-lg font-bold mb-2">Product Name</h4>
+            <p class="text-gray-600 mb-4">$20.00</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Add to Cart</button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/300" alt="Product" class="w-full">
+          <div class="p-4">
+            <h4 class="text-lg font-bold mb-2">Название продукта</h4>
+            <p class="text-gray-600 mb-4">$25.00</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Add в Корзину</button>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/300" alt="Product" class="w-full">
+          <div class="p-4">
+            <h4 class="text-lg font-bold mb-2">Название продукта</h4>
+            <p class="text-gray-600 mb-4">$30.00</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Add в Корзину</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <setction class="w-80 rounded-2xl bg-blue-100 items-center justify-center">
+    <div class="flex  flex-col gap-2 p-8">
+      <input placeholder="Email" class="w-full rounded-lg border border-blue-300 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 focus:ring-offset-blue-100">
+      <label class="flex cursor-pointer items-center justify-between p-1">
+        Accept terms of use
+        <div class="relative inline-block">
+          <input type="checkbox" class="peer h-6 w-12 cursor-pointer appearance-none rounded-full border border-gray-300 bg-white checked:border-blue-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-900 focus-visible:ring-offset-2">
+          <span class="pointer-events-none absolute start-1 top-1 block h-4 w-4 rounded-full bg-gray-400 transition-all duration-200 peer-checked:start-7 peer-checked:bg-blue-900"></span>
+        </div>
+      </label>
+      <label class="flex cursor-pointer items-center justify-between p-1">
+        Submit to newsletter
+        <div class="relative inline-block">
+          <input type="checkbox" class="peer h-6 w-12 cursor-pointer appearance-none rounded-full border border-gray-300 bg-white checked:border-blue-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-900 focus-visible:ring-offset-2">
+          <span class="pointer-events-none absolute start-1 top-1 block h-4 w-4 rounded-full bg-gray-400 transition-all duration-200 peer-checked:start-7 peer-checked:bg-blue-900"></span>
+        </div>
+      </label>
+      <button class="inline-block cursor-pointer rounded-md bg-blue-700 px-4 py-3.5 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-blue-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-700 focus-visible:ring-offset-2 active:scale-95">Save</button>
+    </div>
+  </setction>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Utopiashop. Все права сохарнены.</p>
+    </div>
+  </footer>
+</body>
+</html>
